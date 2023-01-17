@@ -9,8 +9,15 @@ function makeDivs(rows, cols) {
     //Loop which only runs until it reaches the multiplied value of makeDivs. Starting value is set by innerText
     for (c = 0; c < (rows * cols); c++) {
         let cell = document.createElement('div');
-        cell.innerText = (c + 1);
+        cell.innerText = (c + 1)  
         container.appendChild(cell).className = 'grid-item';
+        cell.addEventListener ('mouseover', (event) => {
+            event.target.style.color = 'orange';
+            //setTimeout(() => {
+               // event.target.style.color = ""
+            //}, 500);
+        }, false);
     };
 };
 makeDivs(16, 16)
+
