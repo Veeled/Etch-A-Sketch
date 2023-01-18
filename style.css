@@ -1,7 +1,8 @@
-:root {
+/*:root {
     --grid-cols: 1;
     --grid-rows: 1;
 }
+*/
 
 .heading {
     text-align: center;
@@ -11,7 +12,12 @@
     display: grid;
     grid-gap: 1px;
     grid-template-rows: repeat(64, 1fr);
-    grid-template-columns: repeat (64, 1fr);   
+    grid-template-columns: repeat(64, 1fr);   
+    width: 960px;
+    height: 960px;
+    position: relative;
+    transform: translateX(85%);
+    border: 1px solid #ddd;
   }
   
 
@@ -24,13 +30,14 @@
     text-align: center;
   } */
 
-  .grid-item {
+  /*.grid-item {
     border: 1px solid #ddd;
     width: 40px;
     height: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+*/
 
 .grid-value {
   margin-bottom: 10px;
