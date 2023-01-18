@@ -1,7 +1,5 @@
-:root {
-    --grid-cols: 2;
-    --grid-rows: 2;
-}
+
+
 
 .heading {
     text-align: center;
@@ -11,31 +9,36 @@
 /*Overflow used to ensure contents of .grid-item doesnt exceed the size of #container. */
 #container {
     display: grid;
-    border: 1px solid #ddd;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);        
-    grid-template-columns:  repeat(var(--grid-cols), 1fr);    
+    grid-gap: 1px;
+    
     width: 960px;
     height: 960px;
     position: relative;
     transform: translateX(85%);
-    
+    border: 1px solid #ddd;
   }
   
+
   /*
+  grid-template-rows: repeat(var(--grid-rows), 2fr);        
+    grid-template-columns:  repeat(var(--grid-cols), 2fr);
   .grid-item {
     padding: 1em;
     border: 1px solid #ddd;
     text-align: center;
   } */
 
-  .grid-item {
-    
-    width: 1%;
-    height: 1%;
-    min-width: 20px;
-    min-height: 20px;
+  /*.grid-item {
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+*/
 
 .grid-value {
   margin-bottom: 10px;
+  font-weight: 500;
+  background-color: aliceblue;
 }
