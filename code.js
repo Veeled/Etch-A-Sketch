@@ -5,7 +5,7 @@ function makeDivs(rows, cols) {
      //Creating a custom CSS property name '--grid-..'. Value is set by the variables: can be used to change the number of rows/columns in a grid
     container.style.setProperty('--grid-rows', rows);
     container.style.setProperty('--grid-cols', cols);
-
+    container.innerText ='';
     //Loop which only runs until it reaches the multiplied value of makeDivs. Starting value is set by innerText
     for (c = 0; c < (rows * cols); c++) {
         let cell = document.createElement('div');
