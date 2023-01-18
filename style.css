@@ -10,11 +10,14 @@
 #container {
     display: grid;
     grid-gap: 1px;
-    grid-template-rows: repeat(var(--grid-rows), 2fr);        
-    grid-template-columns:  repeat(var(--grid-cols), 2fr);    
+    grid-template-rows: repeat(64, 1fr);
+    grid-template-columns: repeat (64, 1fr);   
   }
   
+
   /*
+  grid-template-rows: repeat(var(--grid-rows), 2fr);        
+    grid-template-columns:  repeat(var(--grid-cols), 2fr);
   .grid-item {
     padding: 1em;
     border: 1px solid #ddd;
