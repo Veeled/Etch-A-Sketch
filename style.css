@@ -6,7 +6,7 @@
     color: aquamarine;
 }
 
-/*Overflow used to ensure contents of .grid-item doesnt exceed the size of #container. */
+
 #container {
     display: grid;
     grid-gap: 1px;
