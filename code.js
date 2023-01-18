@@ -17,7 +17,7 @@ function makeDivs(rows, cols) {
         let rbgPercentValue = parseInt(target.dataset.percent);
         if (isNaN(rbgPercentValue)) rbgPercentValue = 100;
         if (rbgPercentValue >= 10) {
-        rbgPercentValue -= 10;
+        rbgPercentValue -= 50;
         target.dataset.percent = rbgPercentValue;
     }
         let rgbColor = `rgb(${rbgPercentValue}%,${rbgPercentValue}%,${rbgPercentValue}%)`
@@ -36,4 +36,17 @@ function makeDivs(rows, cols) {
 };
 makeDivs(16, 16)
 
-
+let btn = document.querySelector('.grid-value')
+btn.addEventListener('click', () => {
+    const rows = prompt('Number of rows required?')
+    const cols = prompt('Number of columns required?')
+    if (!isNaN(rows) && !isNaN(cols)) {
+        if (rows <= 100 && cols <= 100) {
+            makeDivs (rows, cols)
+        } else {
+            alert ('Must Enter Values Less Than 100')
+        }
+    } else {
+        alert('Must Enter Number Values Only')
+    }
+    }) 

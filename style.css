@@ -8,13 +8,14 @@
     color: aquamarine;
 }
 #container {
-    display: inline-block;
+    display: grid;
     grid-gap: 1px;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 2fr);        
+    grid-template-columns:  repeat(var(--grid-cols), 2fr);    
   }
   
-  /*.grid-item {
+  /*
+  .grid-item {
     padding: 1em;
     border: 1px solid #ddd;
     text-align: center;
@@ -24,5 +25,10 @@
     border: 1px solid #ddd;
     width: 40px;
     height: 40px;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-value {
+  margin-bottom: 10px;
 }
